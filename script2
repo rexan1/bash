@@ -9,10 +9,17 @@ function validate_url(){
   if [[ `wget -S --spider $1  2>&1 | grep 'HTTP/1.1 200 OK'` ]]; then echo "true"; fi
 }
 
-
+wget --no-check-certificate --content-disposition https://raw.githubusercontent.com/rexan1/devops/master/script1
 
 https://github.com/rexan1/devops/
 https://raw.githubusercontent.com/rexan1/devops/master/script1
 
 
 wget --no-check-certificate --content-disposition https://URL-from-step3/
+curl -LJO https://URL-from-step3/
+
+
+
+tar -zcvf archive-name.tar.gz directory-name
+
+
