@@ -1,6 +1,7 @@
 #! /bin/bash -
 if [[ ! -d /devops/$1 ]]; then
     mkdir -p /devops/$1
-    
+    touch $2
+    mv $2 /devops/$1
 fi
 
