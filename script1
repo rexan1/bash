@@ -1,0 +1,6 @@
+#! /bin/bash -
+if [[ ! -d /devops/$1 ]]; then
+    mkdir -p /devops/$1
+    
+fi
+
