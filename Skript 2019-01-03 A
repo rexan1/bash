@@ -8,5 +8,5 @@ d=$(date +%Y-%m-%d)
 find /directory_path -mtime -2 -ls 
 
 
-
+#find . -mtime -30 -type f -print0  | tar czf changed.tar.gz --files-from=- --null
 #echo "$d"
