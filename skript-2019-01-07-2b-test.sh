@@ -1,9 +1,7 @@
 #!/bin/bash
 
-#FILENAME="employee"
+FILENAME="employee"
 
-#sort -n -k 2,2 $FILENAME
+sort -k 1 $FILENAME
 
-#exit
 
-sort -k 2,2 employee 
