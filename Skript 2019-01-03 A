@@ -1,13 +1,6 @@
 #! /bin/bash 
 
-OF=/var/my-backup-$(date +%Y%m%d).tgz
-           tar -cZf $OF /home/me/
-
-d=$(date +%Y-%m-%d)
-
-find /directory_path -mtime -2 -ls 
-
-find test -mmin -40 | xargs tar --no-recursion -czf $(date +%Y%m%d).tgz      
-
-#find . -mtime -30 -type f -print0  | tar czf changed.tar.gz --files-from=- --null
-#echo "$d"
+#we use find to look for files modified past 2 days piped with tar to create a backup with date as filename
+#the no recursion will prevent tar's recursive descent into specified directories.
+#xargs convert input from stdin into arguments to a command
+find /etc -mtime -2  | xargs tar --no-recursion -czf /home/amin/backup/$(date +%Y-%m-%d).tgz  
