@@ -16,5 +16,5 @@ isinteger() {
 		return 1
 	fi
 }
-#calls the function with the argument entered
+#calls the function with the argument entered.
 isinteger "$1"
