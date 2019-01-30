@@ -1,5 +1,5 @@
 #!/bin/bash
-#read -p "What is your favorite color: " color
+
 
 color="somthing not a color"
 
