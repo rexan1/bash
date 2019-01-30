@@ -4,14 +4,12 @@
 color="somthing not a color"
 
 #This is a while loop that will run until the condition is met
-
 while [ ! "$color" == "red" ] 
 do 	
 	echo -n "What is your favorite color: "
 	read color
 
 #If condition that prints the right answear if met
-
 		if [ $color == "red" ]		
 		then 
 		echo "That is the right answear"
