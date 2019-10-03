@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LINK_VAR=https://raw.githubusercontent.com/rexan1/devops/master/
+LINK_VAR=https://raw.githubusercontent.com/rexan1/bash/master/
 
 wget -nc --progress=dot $LINK_VAR$1 
 
